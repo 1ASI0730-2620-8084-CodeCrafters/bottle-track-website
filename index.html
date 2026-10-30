@@ -42,6 +42,7 @@
             <a href="#how-it-works" data-i18n="nav.how">How it works</a>
             <a href="#segments" data-i18n="nav.segments">Who it is for</a>
             <a href="#product" data-i18n="nav.product">The product</a>
+            <a href="#team" data-i18n="nav.team" data-team-link hidden>The team</a>
             <a href="#contact" data-i18n="nav.contact">Contact</a>
             <div class="language-switch" role="group" aria-label="Language">
                 <button type="button" data-language="en" aria-pressed="true">EN</button>
@@ -202,7 +203,18 @@
         </div>
     </section>
 
-    <section class="section" id="contact" aria-labelledby="contact-title">
+    <section class="section" id="team" aria-labelledby="team-title" data-team-section hidden>
+        <div class="container stack">
+            <p class="eyebrow" data-i18n="team.eyebrow">About the team</p>
+            <h2 id="team-title" data-i18n="team.title">Meet the CodeCrafters team</h2>
+            <p class="lead" data-i18n="team.lead">The five people behind BottleTrack explain who they are and how they build the product.</p>
+            <div class="video-frame">
+                <iframe src="" title="About-the-Team video of CodeCrafters" allowfullscreen loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--muted" id="contact" aria-labelledby="contact-title">
         <div class="container contact">
             <div class="stack">
                 <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
