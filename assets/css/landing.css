@@ -160,7 +160,7 @@
     aspect-ratio: 16 / 9;
     margin-top: var(--space-4);
     background: var(--surface);
-    border: 1px dashed var(--control);
+    border: 1px solid var(--control);
     border-radius: var(--radius-lg);
 }
 
