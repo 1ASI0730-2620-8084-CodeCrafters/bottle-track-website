@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="assets/css/legal.css">
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to main content</a>
+<a class="skip-link" href="#main" data-i18n="nav.skip">Skip to main content</a>
 
 <header class="site-header">
     <div class="container site-header__inner">
@@ -28,78 +28,86 @@
             <span class="brand__name">BottleTrack</span>
         </a>
         <nav class="site-nav" aria-label="Primary">
-            <a href="index.html">Back to the home page</a>
+            <a href="index.html" data-i18n="terms.back">Back to the home page</a>
+            <div class="language-switch" role="group" aria-label="Language">
+                <button type="button" data-language="en" aria-pressed="true">EN</button>
+                <button type="button" data-language="es" aria-pressed="false">ES</button>
+            </div>
         </nav>
     </div>
 </header>
 
 <main class="container legal" id="main">
     <header class="stack">
-        <p class="eyebrow">Legal</p>
-        <h1>Terms and conditions of service</h1>
-        <p class="muted">Last updated: September 2026</p>
+        <p class="eyebrow" data-i18n="terms.eyebrow">Legal</p>
+        <h1 data-i18n="terms.title">Terms and conditions of service</h1>
+        <p class="muted" data-i18n="terms.updated">Last updated: October 2026</p>
     </header>
 
     <section aria-labelledby="acceptance">
-        <h2 id="acceptance">1. Acceptance of the terms</h2>
-        <p>By accessing or using BottleTrack, operated by CodeCrafters, the user accepts these terms and conditions in full. Whoever does not agree with them must not use the platform.</p>
+        <h2 id="acceptance" data-i18n="terms.acceptance.title">1. Acceptance of the terms</h2>
+        <p data-i18n="terms.acceptance.body">By accessing or using BottleTrack, operated by CodeCrafters, the user accepts these terms and conditions in full. Whoever does not agree with them must not use the platform.</p>
     </section>
 
     <section aria-labelledby="service">
-        <h2 id="service">2. Description of the service</h2>
-        <p>BottleTrack is a web platform for the management and tracking of bottled beverage transport. It allows the user to follow the progress of a delivery route, to consult the data reported by the internet of things devices installed on the vehicle and the cargo, and to report transport incidents with supporting evidence.</p>
-        <p>The information reported by the devices depends on the sensors available in each vehicle and on the connectivity conditions of the route. CodeCrafters does not guarantee an uninterrupted supply of that data.</p>
+        <h2 id="service" data-i18n="terms.service.title">2. Description of the service</h2>
+        <p data-i18n="terms.service.body1">BottleTrack is a web platform for the management and tracking of bottled beverage transport. It allows the user to follow the progress of a delivery route, to consult the data reported by the internet of things devices installed on the vehicle and the cargo, and to report transport incidents with supporting evidence.</p>
+        <p data-i18n="terms.service.body2">The information reported by the devices depends on the sensors available in each vehicle and on the connectivity conditions of the route. CodeCrafters does not guarantee an uninterrupted supply of that data.</p>
     </section>
 
     <section aria-labelledby="accounts">
-        <h2 id="accounts">3. Accounts and responsible use</h2>
-        <p>The user is responsible for the confidentiality of the credentials of the account and for every activity carried out through it. The user undertakes to provide truthful information, to report incidents in good faith and not to interfere with the operation of the platform or with the data of other organizations.</p>
+        <h2 id="accounts" data-i18n="terms.accounts.title">3. Accounts and responsible use</h2>
+        <p data-i18n="terms.accounts.body">The user is responsible for the confidentiality of the credentials of the account and for every activity carried out through it. The user undertakes to provide truthful information, to report incidents in good faith and not to interfere with the operation of the platform or with the data of other organizations.</p>
     </section>
 
     <section aria-labelledby="data">
-        <h2 id="data">4. Data and privacy</h2>
-        <p>The platform processes operational data of the transport, such as vehicle location, cargo temperature, impact records and the evidence attached to an incident. That data belongs to the contracting organization and is processed only to provide the service.</p>
-        <p>CodeCrafters applies reasonable technical and organizational measures to protect the information, and does not sell or transfer it to third parties for advertising purposes.</p>
+        <h2 id="data" data-i18n="terms.data.title">4. Data and privacy</h2>
+        <p data-i18n="terms.data.body1">The platform processes operational data of the transport, such as vehicle location, cargo temperature, impact records and the evidence attached to an incident. That data belongs to the contracting organization and is processed only to provide the service.</p>
+        <p data-i18n="terms.data.body2">CodeCrafters applies reasonable technical and organizational measures to protect the information, and does not sell or transfer it to third parties for advertising purposes.</p>
     </section>
 
     <section aria-labelledby="ethics">
-        <h2 id="ethics">5. Ethical and professional commitment</h2>
-        <p>The development and operation of BottleTrack follow the principles of the ACM and IEEE Software Engineering Code of Ethics and Professional Practice, and of the Code of Ethics of the Colegio de Ingenieros del Perú. In particular, CodeCrafters commits to:</p>
+        <h2 id="ethics" data-i18n="terms.ethics.title">5. Ethical and professional commitment</h2>
+        <p data-i18n="terms.ethics.intro">The development and operation of BottleTrack follow the principles of the ACM and IEEE Software Engineering Code of Ethics and Professional Practice, and of the Code of Ethics of the Colegio de Ingenieros del Perú. In particular, CodeCrafters commits to:</p>
         <ul>
-            <li><strong>Public interest.</strong> To act consistently with the public interest, considering the safety of the transport operation and of the people involved in it.</li>
-            <li><strong>Honesty in the product.</strong> To describe the capabilities and the limits of the platform truthfully, without promising accuracy that the available sensors cannot deliver.</li>
-            <li><strong>Integrity of the evidence.</strong> To preserve incident records without alteration, so that they remain trustworthy for the follow-up carried out by the supervisor.</li>
-            <li><strong>Privacy.</strong> To collect only the data required by the service and to protect the personal information of drivers and operators.</li>
-            <li><strong>Quality and accessibility.</strong> To sustain quality standards in the product, including accessibility and internationalization, so that the platform can be used by every member of the operation.</li>
-            <li><strong>Transparency of the process.</strong> To document the engineering process followed by the team, keeping the traceability of the decisions and of the contributions of each member.</li>
+            <li><strong data-i18n="terms.ethics.public.label">Public interest.</strong> <span data-i18n="terms.ethics.public.body">To act consistently with the public interest, considering the safety of the transport operation and of the people involved in it.</span></li>
+            <li><strong data-i18n="terms.ethics.honesty.label">Honesty in the product.</strong> <span data-i18n="terms.ethics.honesty.body">To describe the capabilities and the limits of the platform truthfully, without promising accuracy that the available sensors cannot deliver.</span></li>
+            <li><strong data-i18n="terms.ethics.evidence.label">Integrity of the evidence.</strong> <span data-i18n="terms.ethics.evidence.body">To preserve incident records without alteration, so that they remain trustworthy for the follow-up carried out by the supervisor.</span></li>
+            <li><strong data-i18n="terms.ethics.privacy.label">Privacy.</strong> <span data-i18n="terms.ethics.privacy.body">To collect only the data required by the service and to protect the personal information of drivers and operators.</span></li>
+            <li><strong data-i18n="terms.ethics.quality.label">Quality and accessibility.</strong> <span data-i18n="terms.ethics.quality.body">To sustain quality standards in the product, including accessibility and internationalization, so that the platform can be used by every member of the operation.</span></li>
+            <li><strong data-i18n="terms.ethics.transparency.label">Transparency of the process.</strong> <span data-i18n="terms.ethics.transparency.body">To document the engineering process followed by the team, keeping the traceability of the decisions and of the contributions of each member.</span></li>
         </ul>
     </section>
 
     <section aria-labelledby="availability">
-        <h2 id="availability">6. Availability and liability</h2>
-        <p>The service is provided as it is available. CodeCrafters is not liable for indirect damages derived from interruptions of the service, from failures of third party devices or networks, or from decisions taken by the user on the basis of incomplete data reported by the sensors.</p>
+        <h2 id="availability" data-i18n="terms.availability.title">6. Availability and liability</h2>
+        <p data-i18n="terms.availability.body">The service is provided as it is available. CodeCrafters is not liable for indirect damages derived from interruptions of the service, from failures of third party devices or networks, or from decisions taken by the user on the basis of incomplete data reported by the sensors.</p>
     </section>
 
     <section aria-labelledby="property">
-        <h2 id="property">7. Intellectual property</h2>
-        <p>The software, the trademark, the design system and the documentation of BottleTrack belong to CodeCrafters. The operational data entered by each organization remains the property of that organization.</p>
+        <h2 id="property" data-i18n="terms.property.title">7. Intellectual property</h2>
+        <p data-i18n="terms.property.body">The software, the trademark, the design system and the documentation of BottleTrack belong to CodeCrafters. The operational data entered by each organization remains the property of that organization.</p>
     </section>
 
     <section aria-labelledby="changes">
-        <h2 id="changes">8. Changes to these terms</h2>
-        <p>CodeCrafters may update these terms in order to reflect changes in the platform or in the applicable regulation. Relevant changes are announced through the platform before they take effect.</p>
+        <h2 id="changes" data-i18n="terms.changes.title">8. Changes to these terms</h2>
+        <p data-i18n="terms.changes.body">CodeCrafters may update these terms in order to reflect changes in the platform or in the applicable regulation. Relevant changes are announced through the platform before they take effect.</p>
     </section>
 
     <section aria-labelledby="contact">
-        <h2 id="contact">9. Contact</h2>
-        <p>Questions about these terms can be addressed to the CodeCrafters team through the contact channels published on the home page.</p>
+        <h2 id="contact" data-i18n="terms.contact.title">9. Contact</h2>
+        <p data-i18n="terms.contact.body">Questions about these terms can be addressed to the CodeCrafters team through the contact channels published on the home page.</p>
     </section>
 </main>
 
 <footer class="site-footer">
     <div class="container site-footer__legal">
-        <p>&copy; 2026 CodeCrafters. All rights reserved.</p>
+        <p><a href="privacy-policy.html" data-i18n="footer.privacy">Privacy policy</a></p>
+        <p data-i18n="footer.copyright">&copy; 2026 CodeCrafters. All rights reserved.</p>
     </div>
 </footer>
+
+<script src="assets/js/translations.js"></script>
+<script src="assets/js/i18n.js"></script>
 </body>
 </html>
