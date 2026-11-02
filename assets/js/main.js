@@ -41,7 +41,21 @@
         });
     }
 
+    function setupTeamVideo() {
+        const section = document.querySelector('[data-team-section]');
+        const link = document.querySelector('[data-team-link]');
+        const frame = section ? section.querySelector('iframe') : null;
+
+        if (!frame || !frame.getAttribute('src')) {
+            return;
+        }
+
+        section.hidden = false;
+        link.hidden = false;
+    }
+
     document.addEventListener('DOMContentLoaded', () => {
+        setupTeamVideo();
         setupNavigationToggle();
         setupContactForm();
     });
