@@ -42,8 +42,8 @@
             <a href="#how-it-works" data-i18n="nav.how">How it works</a>
             <a href="#segments" data-i18n="nav.segments">Who it is for</a>
             <a href="#product" data-i18n="nav.product">The product</a>
-            <a href="#team" data-i18n="nav.team" data-team-link hidden>The team</a>
-            <a href="#contact" data-i18n="nav.contact">Contact</a>
+            <a href="#team" data-i18n="nav.team">The team</a>
+            <a href="#subscription" data-i18n="nav.subscription">Subscription</a>
             <div class="language-switch" role="group" aria-label="Language">
                 <button type="button" data-language="en" aria-pressed="true">EN</button>
                 <button type="button" data-language="es" aria-pressed="false">ES</button>
@@ -191,61 +191,246 @@
     </section>
 
     <section class="section section--muted" id="product" aria-labelledby="product-title">
-        <div class="container stack">
-            <p class="eyebrow" data-i18n="product.eyebrow">About the product</p>
-            <h2 id="product-title" data-i18n="product.title">See BottleTrack at work</h2>
-            <p class="lead" data-i18n="product.lead">The analytics dashboard, the transport operations and the incident follow-up, as the team sees them every day.</p>
-            <div class="product-screenshots">
-                <img src="assets/img/dashboard_bottletrack.png" alt="BottleTrack dashboard with the daily operation indicators">
-                <img src="assets/img/operaciones_bottletrack.png" alt="BottleTrack list of transport operations">
-                <img src="assets/img/incidencias_bottletrack.png" alt="BottleTrack list of reported incidents">
+    <div class="container stack">
+        <p class="eyebrow" data-i18n="product.eyebrow">About the product</p>
+
+        <h2 id="product-title" data-i18n="product.title">
+            See BottleTrack at work
+        </h2>
+
+        <p class="lead" data-i18n="product.lead">
+            Discover how BottleTrack transforms beverage transportation management.
+        </p>
+
+        <div class="video-frame video-placeholder">
+            <div class="video-placeholder__content">
+                <span class="video-placeholder__icon" aria-hidden="true">▶</span>
+                <h3 data-i18n="product.video.title">About the Product</h3>
+                <p data-i18n="product.video.description">
+                    Our product presentation video will be available soon.
+                </p>
+                <span class="video-placeholder__label" data-i18n="video.comingSoon">
+                    Video coming soon
+                </span>
             </div>
         </div>
+
+        <div class="product-screenshots">
+            <img src="assets/img/dashboard_bottletrack.png"
+                 alt="BottleTrack dashboard with daily operation indicators">
+
+            <img src="assets/img/operaciones_bottletrack.png"
+                 alt="BottleTrack transport operations">
+
+            <img src="assets/img/incidencias_bottletrack.png"
+                 alt="BottleTrack reported incidents">
+        </div>
+    </div>
     </section>
 
-    <section class="section" id="team" aria-labelledby="team-title" data-team-section hidden>
-        <div class="container stack">
-            <p class="eyebrow" data-i18n="team.eyebrow">About the team</p>
-            <h2 id="team-title" data-i18n="team.title">Meet the CodeCrafters team</h2>
-            <p class="lead" data-i18n="team.lead">The five people behind BottleTrack explain who they are and how they build the product.</p>
-            <div class="video-frame">
-                <iframe src="" title="About-the-Team video of CodeCrafters" allowfullscreen loading="lazy"></iframe>
+    <section class="section" id="team" aria-labelledby="team-title">
+    <div class="container stack">
+
+        <p class="eyebrow" data-i18n="team.eyebrow">
+            About the team
+        </p>
+
+        <h2 id="team-title" data-i18n="team.title">
+            Meet the CodeCrafters team
+        </h2>
+
+        <p class="lead" data-i18n="team.lead">
+            Meet the people behind BottleTrack.
+        </p>
+
+        <div class="video-frame video-placeholder">
+            <div class="video-placeholder__content">
+                <span class="video-placeholder__icon" aria-hidden="true">▶</span>
+
+                <h3 data-i18n="team.video.title">About the Team</h3>
+
+                <p data-i18n="team.video.description">
+                    Get to know the people behind BottleTrack.
+                </p>
+
+                <span class="video-placeholder__label" data-i18n="video.comingSoon">
+                    Video coming soon
+                </span>
             </div>
         </div>
+
+        <div class="team-grid">
+
+            <article class="card team-card">
+                <img
+                    src="assets/img/team-members/angel-crispin.jpeg"
+                    alt="Ángel Crispín"
+                    class="team-card__photo"
+                    loading="lazy"
+                >
+                <h3 data-i18n="team.member1.name">Crispin Valdivia, Angel Gabriel</h3>
+                <p class="muted" data-i18n="team.member1.role">Project Manager</p>
+            </article>
+
+            <article class="card team-card">
+                <img
+                    src="assets/img/team-members/leonardo-cumba.jpeg"
+                    alt="Leonardo Cumba"
+                    class="team-card__photo"
+                    loading="lazy"
+                >
+                <h3 data-i18n="team.member2.name">Cumba Rengifo, Leonardo Raul</h3>
+                <p class="muted" data-i18n="team.member2.role">Frontend Developer</p>
+            </article>
+
+            <article class="card team-card">
+                <img
+                    src="assets/img/team-members/maria-jose-pezo.jpeg"
+                    alt="Maria Jose Pezo"
+                    class="team-card__photo"
+                    loading="lazy"
+                >
+                <h3 data-i18n="team.member3.name">Pezo Castilla, Maria Jose</h3>
+                <p class="muted" data-i18n="team.member3.role">Backend Developer</p>
+            </article>
+
+            <article class="card team-card">
+                <img
+                    src="assets/img/team-members/gerardo-palacin.jpeg"
+                    alt="Gerardo Palacín"s
+                    class="team-card__photo"
+                    loading="lazy"
+                >
+                <h3 data-i18n="team.member4.name">Palacin Lazo, Gerardo Valentin</h3>
+                <p class="muted" data-i18n="team.member4.role">UI/UX Designer</p>
+            </article>
+
+        </div>
+    </div>
     </section>
 
-    <section class="section section--muted" id="contact" aria-labelledby="contact-title">
-        <div class="container contact">
-            <div class="stack">
-                <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
-                <h2 id="contact-title" data-i18n="contact.title">Tell us about your distribution</h2>
-                <p class="lead" data-i18n="contact.lead">Leave your details and the CodeCrafters team will get in touch to show you how BottleTrack fits your routes.</p>
-            </div>
-            <form class="card contact__form" data-contact-form>
-                <div class="field">
-                    <label for="contact-name" data-i18n="contact.name">Full name</label>
-                    <input class="input" id="contact-name" name="name" type="text" autocomplete="name" required>
-                </div>
-                <div class="field">
-                    <label for="contact-company" data-i18n="contact.company">Company</label>
-                    <input class="input" id="contact-company" name="company" type="text" autocomplete="organization" required>
-                </div>
-                <div class="field">
-                    <label for="contact-segment" data-i18n="contact.segment">I am a</label>
-                    <select class="input" id="contact-segment" name="segment" required>
-                        <option value="distributor" data-i18n="contact.segment.distributor">Beverage distributor</option>
-                        <option value="supervisor" data-i18n="contact.segment.supervisor">Fleet supervisor</option>
-                        <option value="delivery-point" data-i18n="contact.segment.deliveryPoint">Corner store or minimarket</option>
-                    </select>
-                </div>
-                <div class="field">
-                    <label for="contact-message" data-i18n="contact.message">Message</label>
-                    <textarea class="input" id="contact-message" name="message" rows="4" required></textarea>
-                </div>
-                <button class="button button--primary" type="submit" data-i18n="contact.submit">Send message</button>
-                <p class="contact__status" role="status" data-contact-status hidden data-i18n="contact.sent">Thank you. The team will contact you soon.</p>
-            </form>
+    <section class="section section--muted" id="subscription"
+         aria-labelledby="subscription-title">
+
+    <div class="container stack">
+
+        <p class="eyebrow" data-i18n="subscription.eyebrow">
+            Subscription
+        </p>
+
+        <h2 id="subscription-title" data-i18n="subscription.title">
+            Choose the right plan for your business
+        </h2>
+
+        <p class="lead" data-i18n="subscription.lead">
+            Explore our subscription options.
+        </p>
+
+        <div class="subscription-grid">
+
+            <!-- FREE PLAN -->
+            <article class="card subscription-card">
+
+                <p class="subscription-card__label">FREE</p>
+
+                <h3 data-i18n="subscription.free.title">Free</h3>
+
+                <p class="subscription-card__price"
+                   data-i18n="subscription.free.price">
+                    Free
+                </p>
+
+                <p class="muted"
+                   data-i18n="subscription.free.description">
+                    Get started with essential BottleTrack features.
+                </p>
+
+                <ul class="check-list">
+                    <li data-i18n="subscription.free.feature1">Basic platform access</li>
+                    <li data-i18n="subscription.free.feature2">Basic delivery tracking</li>
+                    <li data-i18n="subscription.free.feature3">Essential features</li>
+                </ul>
+
+                <a href="#segments" class="button button--secondary"
+                   data-i18n="subscription.free.cta">
+                    Get started
+                </a>
+
+            </article>
+
+            <!-- PREMIUM PLAN -->
+            <article class="card subscription-card subscription-card--featured">
+
+                <span class="subscription-card__badge"
+                      data-i18n="subscription.popular">
+                    Most popular
+                </span>
+
+                <p class="subscription-card__label">PREMIUM</p>
+
+                <h3 data-i18n="subscription.premium.title">Premium</h3>
+
+                <p class="subscription-card__price"
+                   data-i18n="subscription.premium.price">
+                    Coming soon
+                </p>
+
+                <p class="muted"
+                   data-i18n="subscription.premium.description">
+                    Advanced tools for growing operations.
+                </p>
+
+                <ul class="check-list">
+                    <li data-i18n="subscription.premium.feature1">Advanced tracking</li>
+                    <li data-i18n="subscription.premium.feature2">Detailed analytics</li>
+                    <li data-i18n="subscription.premium.feature3">Incident management</li>
+                </ul>
+
+                <a href="#segments" class="button button--primary"
+                   data-i18n="subscription.premium.cta">
+                    Explore Premium
+                </a>
+
+            </article>
+
+            <!-- ENTERPRISE PLAN -->
+            <article class="card subscription-card">
+
+                <p class="subscription-card__label">ENTERPRISE</p>
+
+                <h3 data-i18n="subscription.enterprise.title">Enterprise</h3>
+
+                <p class="subscription-card__price"
+                   data-i18n="subscription.enterprise.price">
+                    Custom
+                </p>
+
+                <p class="muted"
+                   data-i18n="subscription.enterprise.description">
+                    A comprehensive solution for large organizations.
+                </p>
+
+                <ul class="check-list">
+                    <li data-i18n="subscription.enterprise.feature1">Complete platform access</li>
+                    <li data-i18n="subscription.enterprise.feature2">Advanced operational management</li>
+                    <li data-i18n="subscription.enterprise.feature3">Scalable business solution</li>
+                </ul>
+
+                <a href="mailto:contact@bottletrack.com"
+                   class="button button--secondary"
+                   data-i18n="subscription.enterprise.cta">
+                    Contact sales
+                </a>
+
+            </article>
+
         </div>
+
+        <p class="subscription-note" data-i18n="subscription.note">
+            Plan features and pricing are subject to confirmation.
+        </p>
+
+    </div>
     </section>
 
 </main>
@@ -262,7 +447,7 @@
         <nav class="site-footer__nav" aria-label="Footer">
             <a href="#features" data-i18n="nav.features">Features</a>
             <a href="#segments" data-i18n="nav.segments">Who it is for</a>
-            <a href="#contact" data-i18n="nav.contact">Contact</a>
+            <a href="#subscription" data-i18n="nav.subscription">Subscription</a>
             <a href="terms-of-service.html" data-i18n="footer.terms">Terms and conditions of service</a>
             <a href="privacy-policy.html" data-i18n="footer.privacy">Privacy policy</a>
         </nav>
