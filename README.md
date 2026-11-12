@@ -39,7 +39,7 @@ Open `index.html` directly in a browser, or serve the folder with any static ser
 
 ## Version
 
-Current release: `v1.0.0`.
+Current release: `v1.1.0`.
 
 ## Deployment
 
