@@ -15,6 +15,7 @@ Course: 1ASI0730 Aplicaciones Web · Universidad Peruana de Ciencias Aplicadas.
 
 ```
 index.html              home page
+contact.html            contact form
 terms-of-service.html   terms and conditions, linked from the footer
 privacy-policy.html     privacy policy, linked from the footer
 style-guide.html        living documentation of the design system
@@ -27,13 +28,13 @@ assets/
     base.css            reset, element defaults and layout utilities
     components.css      shared components: button, card, chip, input, skip link
     layout.css          site header, navigation and footer
-    landing.css         home page sections
+    landing.css         home page sections and contact page
     legal.css           terms of service and privacy policy pages
     style-guide.css     style guide page
   scripts/
     translations.js     English and Spanish dictionaries
     i18n.js             language resolution, switching and persistence
-    main.js             responsive navigation
+    main.js             responsive navigation and contact form
     partials.js         loads the shared header and footer partials
     style-guide.js      copy to clipboard for color tokens
   images/               favicon, product screenshots and team photos

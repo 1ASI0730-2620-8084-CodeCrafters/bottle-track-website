@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <title>Contact | BottleTrack</title>
+    <meta name="description" content="Contact the CodeCrafters team to learn how BottleTrack can track your bottled beverage routes and monitor your cargo.">
+    <meta name="keywords" content="contact, BottleTrack, CodeCrafters, beverage logistics, demo">
+    <meta name="author" content="CodeCrafters">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/tokens.css">
+    <link rel="stylesheet" href="assets/styles/base.css">
+    <link rel="stylesheet" href="assets/styles/components.css">
+    <link rel="stylesheet" href="assets/styles/layout.css">
+    <link rel="stylesheet" href="assets/styles/landing.css">
+</head>
+<body>
+<a class="skip-link" href="#main" data-i18n="nav.skip">Skip to main content</a>
+
+<div data-include="partials/header.html"></div>
+
+<main id="main">
+    <section class="section" id="contact" aria-labelledby="contact-title">
+        <div class="container contact">
+            <div class="stack">
+                <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+                <h1 id="contact-title" data-i18n="contact.title">Tell us about your distribution</h1>
+                <p class="lead" data-i18n="contact.lead">Leave your details and the CodeCrafters team will get in touch to show you how BottleTrack fits your routes.</p>
+            </div>
+            <form class="card contact__form" data-contact-form>
+                <div class="field">
+                    <label for="contact-name" data-i18n="contact.name">Full name</label>
+                    <input class="input" id="contact-name" name="name" type="text" autocomplete="name" required>
+                </div>
+                <div class="field">
+                    <label for="contact-company" data-i18n="contact.company">Company</label>
+                    <input class="input" id="contact-company" name="company" type="text" autocomplete="organization" required>
+                </div>
+                <div class="field">
+                    <label for="contact-segment" data-i18n="contact.segment">I am a</label>
+                    <select class="input" id="contact-segment" name="segment" required>
+                        <option value="distributor" data-i18n="contact.segment.distributor">Beverage distributor</option>
+                        <option value="supervisor" data-i18n="contact.segment.supervisor">Fleet supervisor</option>
+                        <option value="delivery-point" data-i18n="contact.segment.deliveryPoint">Corner store or minimarket</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="contact-message" data-i18n="contact.message">Message</label>
+                    <textarea class="input" id="contact-message" name="message" rows="4" required></textarea>
+                </div>
+                <button class="button button--primary" type="submit" data-i18n="contact.submit">Send message</button>
+                <p class="contact__status" role="status" data-contact-status hidden data-i18n="contact.sent">Thank you. The team will contact you soon.</p>
+            </form>
+        </div>
+    </section>
+</main>
+
+<div data-include="partials/footer.html"></div>
+
+<script src="assets/scripts/translations.js"></script>
+<script src="assets/scripts/i18n.js"></script>
+<script src="assets/scripts/main.js"></script>
+<script src="assets/scripts/partials.js"></script>
+</body>
+</html>

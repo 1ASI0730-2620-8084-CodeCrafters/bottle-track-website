@@ -28,6 +28,29 @@
         });
     }
 
+    function setupContactForm() {
+        const form = document.querySelector('[data-contact-form]');
+        const status = document.querySelector('[data-contact-status]');
+
+        if (!form || !status) {
+            return;
+        }
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            form.reset();
+            status.hidden = false;
+        });
+
+        form.addEventListener('input', () => {
+            status.hidden = true;
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        setupContactForm();
+    });
+
     document.addEventListener('partials:loaded', () => {
         setupNavigationToggle();
     });
