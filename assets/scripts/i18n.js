@@ -62,11 +62,22 @@
         storeLanguage(language);
     }
 
-    document.addEventListener('DOMContentLoaded', () => {
-        apply(resolveInitialLanguage());
-
+    function bindSwitch() {
         document.querySelectorAll('[data-language]').forEach((button) => {
+            if (button.dataset.languageBound) {
+                return;
+            }
+
+            button.dataset.languageBound = 'true';
             button.addEventListener('click', () => apply(button.dataset.language));
         });
-    });
+    }
+
+    function initialize() {
+        apply(resolveInitialLanguage());
+        bindSwitch();
+    }
+
+    document.addEventListener('DOMContentLoaded', initialize);
+    document.addEventListener('partials:loaded', initialize);
 })();

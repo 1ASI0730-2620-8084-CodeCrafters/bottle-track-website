@@ -18,6 +18,9 @@ index.html              home page
 terms-of-service.html   terms and conditions, linked from the footer
 privacy-policy.html     privacy policy, linked from the footer
 style-guide.html        living documentation of the design system
+partials/
+  header.html           shared site header, loaded on every page
+  footer.html           shared site footer, loaded on every page
 assets/
   styles/
     tokens.css          design tokens: color, typography, spacing, radius, elevation
@@ -31,13 +34,14 @@ assets/
     translations.js     English and Spanish dictionaries
     i18n.js             language resolution, switching and persistence
     main.js             responsive navigation
+    partials.js         loads the shared header and footer partials
     style-guide.js      copy to clipboard for color tokens
   images/               favicon, product screenshots and team photos
 ```
 
 ## Running locally
 
-Open `index.html` directly in a browser, or serve the folder with any static server.
+Serve the folder with any static server, such as the Live Server extension of Visual Studio Code or `python -m http.server`, and open `index.html`. The shared header and footer are loaded with `fetch`, so opening the files directly from disk does not work.
 
 ## Version
 

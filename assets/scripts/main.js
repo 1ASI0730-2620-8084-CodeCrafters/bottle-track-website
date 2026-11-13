@@ -28,7 +28,7 @@
         });
     }
 
-    document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('partials:loaded', () => {
         setupNavigationToggle();
     });
 

@@ -21,21 +21,7 @@
 <body>
 <a class="skip-link" href="#main" data-i18n="nav.skip">Skip to main content</a>
 
-<header class="site-header">
-    <div class="container site-header__inner">
-        <a class="brand" href="index.html">
-            <span class="brand__mark" aria-hidden="true"></span>
-            <span class="brand__name">BottleTrack</span>
-        </a>
-        <nav class="site-nav" aria-label="Primary">
-            <a href="index.html" data-i18n="terms.back">Back to the home page</a>
-            <div class="language-switch" role="group" aria-label="Language">
-                <button type="button" data-language="en" aria-pressed="true">EN</button>
-                <button type="button" data-language="es" aria-pressed="false">ES</button>
-            </div>
-        </nav>
-    </div>
-</header>
+<div data-include="partials/header.html"></div>
 
 <main class="container legal" id="main">
     <header class="stack">
@@ -100,14 +86,11 @@
     </section>
 </main>
 
-<footer class="site-footer">
-    <div class="container site-footer__legal">
-        <p><a href="privacy-policy.html" data-i18n="footer.privacy">Privacy policy</a></p>
-        <p data-i18n="footer.copyright">&copy; 2026 CodeCrafters. All rights reserved.</p>
-    </div>
-</footer>
+<div data-include="partials/footer.html"></div>
 
 <script src="assets/scripts/translations.js"></script>
 <script src="assets/scripts/i18n.js"></script>
+<script src="assets/scripts/main.js"></script>
+<script src="assets/scripts/partials.js"></script>
 </body>
 </html>
