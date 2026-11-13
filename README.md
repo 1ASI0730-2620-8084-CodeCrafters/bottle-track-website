@@ -46,7 +46,7 @@ Serve the folder with any static server, such as the Live Server extension of Vi
 
 ## Version
 
-Current release: `v1.1.0`.
+Current release: `v1.2.0`.
 
 ## Deployment
 
