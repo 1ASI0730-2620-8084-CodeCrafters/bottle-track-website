@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
     <title>BottleTrack | Bottled beverage transport tracking and IoT monitoring</title>
     <meta name="description" content="BottleTrack lets beverage distributors follow every route in real time, monitor cargo with IoT sensors and report transport incidents with evidence.">
     <meta name="keywords" content="beverage logistics, fleet tracking, IoT monitoring, cold chain, delivery incidents, transport management">
@@ -16,42 +16,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/tokens.css">
-    <link rel="stylesheet" href="assets/css/base.css">
-    <link rel="stylesheet" href="assets/css/components.css">
-    <link rel="stylesheet" href="assets/css/layout.css">
-    <link rel="stylesheet" href="assets/css/landing.css">
+    <link rel="stylesheet" href="assets/styles/tokens.css">
+    <link rel="stylesheet" href="assets/styles/base.css">
+    <link rel="stylesheet" href="assets/styles/components.css">
+    <link rel="stylesheet" href="assets/styles/layout.css">
+    <link rel="stylesheet" href="assets/styles/landing.css">
 </head>
 <body>
 <a class="skip-link" href="#main" data-i18n="nav.skip">Skip to main content</a>
 
-<header class="site-header">
-    <div class="container site-header__inner">
-        <a class="brand" href="#main">
-            <span class="brand__mark" aria-hidden="true"></span>
-            <span class="brand__name">BottleTrack</span>
-        </a>
-
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle>
-            <span class="visually-hidden" data-i18n="nav.toggle">Open navigation</span>
-            <span class="nav-toggle__bar" aria-hidden="true"></span>
-        </button>
-
-        <nav class="site-nav" id="primary-nav" aria-label="Primary">
-            <a href="#features" data-i18n="nav.features">Features</a>
-            <a href="#how-it-works" data-i18n="nav.how">How it works</a>
-            <a href="#segments" data-i18n="nav.segments">Who it is for</a>
-            <a href="#product" data-i18n="nav.product">The product</a>
-            <a href="#team" data-i18n="nav.team">The team</a>
-            <a href="#subscription" data-i18n="nav.subscription">Subscription</a>
-            <div class="language-switch" role="group" aria-label="Language">
-                <button type="button" data-language="en" aria-pressed="true">EN</button>
-                <button type="button" data-language="es" aria-pressed="false">ES</button>
-            </div>
-            <a class="button button--primary" href="#segments" data-i18n="nav.cta">Get started</a>
-        </nav>
-    </div>
-</header>
+<div data-include="partials/header.html"></div>
 
 <main id="main">
     <section class="hero">
@@ -212,93 +186,19 @@
         </div>
 
         <div class="product-screenshots">
-            <img src="assets/img/dashboard_bottletrack.png"
+            <img src="assets/images/dashboard_bottletrack.png"
                  alt="BottleTrack dashboard with daily operation indicators">
 
-            <img src="assets/img/operaciones_bottletrack.png"
+            <img src="assets/images/operaciones_bottletrack.png"
                  alt="BottleTrack transport operations">
 
-            <img src="assets/img/incidencias_bottletrack.png"
+            <img src="assets/images/incidencias_bottletrack.png"
                  alt="BottleTrack reported incidents">
         </div>
     </div>
     </section>
 
-    <section class="section" id="team" aria-labelledby="team-title">
-    <div class="container stack">
-
-        <p class="eyebrow" data-i18n="team.eyebrow">
-            About the team
-        </p>
-
-        <h2 id="team-title" data-i18n="team.title">
-            Meet the CodeCrafters team
-        </h2>
-
-        <p class="lead" data-i18n="team.lead">
-            Meet the people behind BottleTrack.
-        </p>
-
-        <div class="video-frame">
-            <iframe src="https://www.youtube-nocookie.com/embed/jtTP8YT2dOU"
-                    title="About the Team: CodeCrafters"
-                    loading="lazy"
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
-        </div>
-
-        <div class="team-grid">
-
-            <article class="card team-card">
-                <img
-                    src="assets/img/team-members/angel-crispin.jpeg"
-                    alt="Ángel Crispín"
-                    class="team-card__photo"
-                    loading="lazy"
-                >
-                <h3 data-i18n="team.member1.name">Crispin Valdivia, Angel Gabriel</h3>
-                <p class="muted" data-i18n="team.member1.role">Project Manager</p>
-            </article>
-
-            <article class="card team-card">
-                <img
-                    src="assets/img/team-members/leonardo-cumba.jpeg"
-                    alt="Leonardo Cumba"
-                    class="team-card__photo"
-                    loading="lazy"
-                >
-                <h3 data-i18n="team.member2.name">Cumba Rengifo, Leonardo Raul</h3>
-                <p class="muted" data-i18n="team.member2.role">Frontend Developer</p>
-            </article>
-
-            <article class="card team-card">
-                <img
-                    src="assets/img/team-members/maria-jose-pezo.jpeg"
-                    alt="Maria Jose Pezo"
-                    class="team-card__photo"
-                    loading="lazy"
-                >
-                <h3 data-i18n="team.member3.name">Pezo Castilla, Maria Jose</h3>
-                <p class="muted" data-i18n="team.member3.role">Backend Developer</p>
-            </article>
-
-            <article class="card team-card">
-                <img
-                    src="assets/img/team-members/gerardo-palacin.jpeg"
-                    alt="Gerardo Palacín"s
-                    class="team-card__photo"
-                    loading="lazy"
-                >
-                <h3 data-i18n="team.member4.name">Palacin Lazo, Gerardo Valentin</h3>
-                <p class="muted" data-i18n="team.member4.role">UI/UX Designer</p>
-            </article>
-
-        </div>
-    </div>
-    </section>
-
-    <section class="section section--muted" id="subscription"
+    <section class="section" id="subscription"
          aria-labelledby="subscription-title">
 
     <div class="container stack">
@@ -422,39 +322,96 @@
     </div>
     </section>
 
+    <section class="section section--muted" id="team" aria-labelledby="team-title">
+    <div class="container stack">
+
+        <p class="eyebrow" data-i18n="team.eyebrow">
+            About the team
+        </p>
+
+        <h2 id="team-title" data-i18n="team.title">
+            Meet the CodeCrafters team
+        </h2>
+
+        <p class="lead" data-i18n="team.lead">
+            Meet the people behind BottleTrack.
+        </p>
+
+        <div class="video-frame">
+            <iframe src="https://www.youtube-nocookie.com/embed/jtTP8YT2dOU"
+                    title="About the Team: CodeCrafters"
+                    loading="lazy"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+        </div>
+
+        <div class="team-grid">
+
+            <article class="card team-card">
+                <img
+                    src="assets/images/team-members/angel-crispin.jpeg"
+                    alt="Ángel Crispín"
+                    class="team-card__photo"
+                    loading="lazy"
+                >
+                <h3 data-i18n="team.member1.name">Crispin Valdivia, Angel Gabriel</h3>
+                <p class="muted" data-i18n="team.member1.role">Project Manager</p>
+            </article>
+
+            <article class="card team-card">
+                <img
+                    src="assets/images/team-members/leonardo-cumba.jpeg"
+                    alt="Leonardo Cumba"
+                    class="team-card__photo"
+                    loading="lazy"
+                >
+                <h3 data-i18n="team.member2.name">Cumba Rengifo, Leonardo Raul</h3>
+                <p class="muted" data-i18n="team.member2.role">Frontend Developer</p>
+            </article>
+
+            <article class="card team-card">
+                <img
+                    src="assets/images/team-members/maria-jose-pezo.jpeg"
+                    alt="Maria Jose Pezo"
+                    class="team-card__photo"
+                    loading="lazy"
+                >
+                <h3 data-i18n="team.member3.name">Pezo Castilla, Maria Jose</h3>
+                <p class="muted" data-i18n="team.member3.role">Backend Developer</p>
+            </article>
+
+            <article class="card team-card">
+                <img
+                    src="assets/images/team-members/gerardo-palacin.jpeg"
+                    alt="Gerardo Palacín"s
+                    class="team-card__photo"
+                    loading="lazy"
+                >
+                <h3 data-i18n="team.member4.name">Palacin Lazo, Gerardo Valentin</h3>
+                <p class="muted" data-i18n="team.member4.role">UI/UX Designer</p>
+            </article>
+
+        </div>
+    </div>
+    </section>
+
+    <section class="section closing" id="closing" aria-labelledby="closing-title">
+        <div class="container closing__inner">
+            <h2 id="closing-title" data-i18n="closing.title">Every bottle accounted for, every route under control.</h2>
+            <p class="lead" data-i18n="closing.lead">Stop discovering losses when the truck comes back. Start seeing them while there is still time to act.</p>
+            <a class="button button--primary" href="#subscription" data-i18n="closing.cta">Choose your plan</a>
+        </div>
+    </section>
+
+
 </main>
 
-<footer class="site-footer">
-    <div class="container site-footer__inner">
-        <div class="stack">
-            <a class="brand brand--inverse" href="#main">
-                <span class="brand__mark" aria-hidden="true"></span>
-                <span class="brand__name">BottleTrack</span>
-            </a>
-            <p class="site-footer__text" data-i18n="footer.tagline">Bottled beverage transport tracking, built by CodeCrafters.</p>
-        </div>
-        <nav class="site-footer__nav" aria-label="Footer">
-            <a href="#features" data-i18n="nav.features">Features</a>
-            <a href="#segments" data-i18n="nav.segments">Who it is for</a>
-            <a href="#subscription" data-i18n="nav.subscription">Subscription</a>
-            <a href="terms-of-service.html" data-i18n="footer.terms">Terms and conditions of service</a>
-            <a href="privacy-policy.html" data-i18n="footer.privacy">Privacy policy</a>
-        </nav>
-        <nav class="site-footer__nav" aria-labelledby="footer-social-title">
-            <p class="site-footer__title" id="footer-social-title" data-i18n="footer.follow">Follow us</p>
-            <a href="https://www.linkedin.com/company/codecrafters-bottletrack" target="_blank" rel="noopener">LinkedIn</a>
-            <a href="https://www.instagram.com/bottletrack.pe" target="_blank" rel="noopener">Instagram</a>
-            <a href="https://www.facebook.com/bottletrack.pe" target="_blank" rel="noopener">Facebook</a>
-            <a href="https://github.com/1ASI0730-2620-8084-CodeCrafters" target="_blank" rel="noopener">GitHub</a>
-        </nav>
-    </div>
-    <div class="container site-footer__legal">
-        <p data-i18n="footer.copyright">&copy; 2026 CodeCrafters. All rights reserved.</p>
-    </div>
-</footer>
+<div data-include="partials/footer.html"></div>
 
-<script src="assets/js/translations.js"></script>
-<script src="assets/js/i18n.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="assets/scripts/translations.js"></script>
+<script src="assets/scripts/i18n.js"></script>
+<script src="assets/scripts/main.js"></script>
+<script src="assets/scripts/partials.js"></script>
 </body>
 </html>
