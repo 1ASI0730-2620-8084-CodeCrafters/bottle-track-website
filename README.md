@@ -16,21 +16,23 @@ Course: 1ASI0730 Aplicaciones Web · Universidad Peruana de Ciencias Aplicadas.
 ```
 index.html              home page
 terms-of-service.html   terms and conditions, linked from the footer
+privacy-policy.html     privacy policy, linked from the footer
 style-guide.html        living documentation of the design system
 assets/
-  css/
+  styles/
     tokens.css          design tokens: color, typography, spacing, radius, elevation
     base.css            reset, element defaults and layout utilities
     components.css      shared components: button, card, chip, input, skip link
     layout.css          site header, navigation and footer
     landing.css         home page sections
-    legal.css           terms and conditions page
+    legal.css           terms of service and privacy policy pages
     style-guide.css     style guide page
-  js/
+  scripts/
     translations.js     English and Spanish dictionaries
     i18n.js             language resolution, switching and persistence
     main.js             responsive navigation
     style-guide.js      copy to clipboard for color tokens
+  images/               favicon, product screenshots and team photos
 ```
 
 ## Running locally
